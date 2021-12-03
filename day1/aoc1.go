@@ -20,12 +20,6 @@ func sum(window []int) int {
 func calculate_depth_increases(window_size int) {
 	last_measurement := make([]int, window_size)
 	current_measurement := make([]int, window_size)
-	for i := range last_measurement {
-		last_measurement[i] = 0
-	}
-	for i := range current_measurement {
-		current_measurement[i] = 0
-	}
 	num_of_increases := 0
 	file, err := os.Open("aoc1.txt")
 
